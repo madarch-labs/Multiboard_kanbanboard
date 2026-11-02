@@ -1,0 +1,86 @@
+/* MultiBoard: используются стили доски Kanboard (#board, .task-board ...),
+   здесь только раскладка панели фильтров и мелкие дополнения. */
+
+.multiboard .page-header .multiboard-summary {
+    opacity: 0.7;
+}
+
+.multiboard-filters.multiboard-filters-hidden {
+    display: none;
+}
+
+.multiboard-filters-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.multiboard-filter-group {
+    flex: 1 1 260px;
+    min-width: 0;
+    margin: 0;
+}
+
+.multiboard-filter-group input[type="text"],
+.multiboard-filter-group select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.multiboard-filter-actions {
+    margin-bottom: 5px;
+}
+
+.multiboard-filter-actions a {
+    margin-right: 10px;
+}
+
+.multiboard-checkbox-list {
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.multiboard-checkbox-list label {
+    display: block;
+    font-weight: normal;
+    margin: 2px 0;
+}
+
+.multiboard-muted {
+    opacity: 0.6;
+    font-size: 0.9em;
+}
+
+.multiboard-hide-column {
+    margin-left: 5px;
+    opacity: 0.5;
+}
+
+.multiboard-hide-column:hover,
+.multiboard-hide-column:focus {
+    opacity: 1;
+}
+
+.multiboard-task-project {
+    font-size: 0.85em;
+    margin: 2px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.multiboard-task-project a {
+    color: inherit;
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+.multiboard-task-project a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.multiboard-checkbox-list label.multiboard-special {
+    font-style: italic;
+}
